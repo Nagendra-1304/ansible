@@ -22,3 +22,5 @@
         TRAINER: "Sivakumar Reddy"
       ansible.builtin.debug:
         msg: "Hi, I am learning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
+
+#1.Preference from command line/args.        
