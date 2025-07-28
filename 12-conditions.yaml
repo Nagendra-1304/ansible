@@ -1,6 +1,6 @@
 - name: check the number is less than 10 or not
   hosts: local
-  connections: local #for local hosts
+  connection: local #for local hosts
   vars_prompt:
   - name: number #consider string in prompt, use | int to consider  integer
     prompt: please enter the number
