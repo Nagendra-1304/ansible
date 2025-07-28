@@ -2,7 +2,7 @@
   hosts: local
   connection: local #for local hosts
   vars_prompt:
-  - name: number #consider string in prompt, use | int to consider  integer
+  - name: number #consider as string in prompt, use | int to consider  integer
     prompt: please enter the number
     private: false #not confidential
 
