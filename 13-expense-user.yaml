@@ -1,12 +1,13 @@
 - name: create expense user
   hosts: web
   become: yes
+  connection: local
   tasks:
   - name: check user exists or not
     ansible.builtin.command: id expense  #ansible can't gaurentee module exists for everything...we can use direct commands if module not available
     register: USER #here USER is a variable that gets output from above command
     ignore_errors: true
-    
+
   - name: print the user information
     ansible.builtin.debug:
       msg: "user info: {{ USER }}"  
